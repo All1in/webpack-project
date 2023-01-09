@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-to-show {
+    width: 400px;
+    height: 400px;
+    display: none;
+}
+
+.images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid #797979;
+    background: none;
+    margin: 10px 0;
+    width: 150px;
+    height: 50px;
+}
+
+.red {
+    background-color: #a80f0f;
+}
+
+.green {
+    background-color: #079707;
+}
+
+.active {
+    display: flex;
+}

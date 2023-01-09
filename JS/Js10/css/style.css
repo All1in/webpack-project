@@ -1,0 +1,30 @@
+.password-form {
+    display: flex;
+    flex-direction: column;
+}
+.input-wrapper {
+    position: relative;
+    width: 200px;
+
+}
+
+.input-wrapper input {
+    min-width: 120px;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    color: grey;
+}
+
+.btn{
+    width: 150px;
+}
+
+ .hidden{
+    display: none;
+}

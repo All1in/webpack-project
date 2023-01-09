@@ -1,0 +1,25 @@
+.btn-wrapper{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    border: none;
+    border-radius: 20px;
+    min-width: 120px;
+    padding: 7px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #000000;
+    cursor: pointer;
+}
+.btn:active,
+.btn:focus{
+    outline: none;
+}
+
+.blue{
+    background-color: #0030a8;
+}
+

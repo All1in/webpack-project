@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.centered-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs-title {
+    padding: 20px;
+    background-color: #23201d;
+    color: #937341;
+    cursor: pointer;
+}
+
+.tabs-title.active {
+    background-color: #937341;
+    color: #23201d;
+}
+
+.tabs-item.active{
+    display: flex;
+}
+
+.tabs-item.hidden{
+    display: none;
+}

@@ -1,3 +1,2 @@
-# step_projects
-
-Project with Webpack configuration!
+JS - Tasks from Javascript
+webpack-config-project -- project with webpack configuration!

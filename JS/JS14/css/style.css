@@ -1,0 +1,379 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > .hidden {
+    display: none;
+}
+
+.to-top {
+    background-color: #89CA62;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    border: none;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+}
+
+.fa-arrow-up {
+    font-size: 30px;
+    color: #fff;
+}
+
+.blue-title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 51px;
+    text-align: center;
+    color: #18B4CF;
+}
+
+.header-navigation {
+    background-color: #313131;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img,
+.logo-title {
+    margin: 22px 0 21px 27px;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.navbar-list {
+    display: flex;
+}
+
+.navbar-item {
+    padding: 26px 35px;
+}
+
+.navbar-link:hover {
+    color: #14B9D5;
+}
+
+.navbar-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.search-link {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-search {
+    margin: 27px;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+}
+
+.header-about {
+    background-image: url(../img/header-background\ \(1\).png);
+    height: 370px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-about-title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
+    color: #fff;
+    margin-top: 164px;
+    margin-bottom: 44px;
+}
+
+.btn {
+    width: 170px;
+    height: 55px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-bottom: 74px;
+}
+
+.subscribe-btn {
+    background: #89CA62;
+    margin-right: 20px;
+}
+
+.best-art-btn {
+    background: #14B9D5;
+}
+
+.popular-posts {
+    padding-top: 49px;
+    padding-bottom: 72px;
+    background-color: #F2F2F2;
+}
+
+.popular-posts-list {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 30px;
+    column-gap: 15px;
+    height: 865px;
+}
+
+.popular-posts-item {
+    width: 370px;
+}
+
+/* Force new columns */
+.popular-posts-list::before,
+.popular-posts-list::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}
+
+/* Re-order items into 3 rows */
+/* 1, 4 (3n + 1) с order: 1;
+2, 5 (3n + 2) с order: 2;
+3, 6 12(3n) с order: 3.
+*/
+.popular-posts-item:nth-child(3n+1) {
+    order: 1;
+}
+
+.popular-posts-item:nth-child(3n+2) {
+    order: 2;
+}
+
+.popular-posts-item:nth-child(3n) {
+    order: 3;
+}
+
+.popular-posts-description {
+    padding: 20px;
+    background: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.our-clients {
+    background-image: url(../img/Layer\ 4\ 1\ \(2\).png);
+    height: 588px;
+    margin-bottom: 50px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    justify-items: center;
+}
+
+.our-clients-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-top: 106px;
+
+    color: #FFFFFF;
+}
+
+.our-clients-delimiter {
+    padding: 0;
+    margin: 87px 0 106px;
+    width: 60px;
+    height: 3px;
+    left: 920px;
+    top: 239px;
+    border: none;
+    background: #18B4CF;
+}
+
+.our-clients-list {
+    width: 881px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 185px;
+}
+
+.top-rated-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    margin-top: 0;
+}
+
+.top-rated-img {
+    width: 280px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.news {
+    margin-top: 48px;
+    margin-bottom: 71px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 43px 60px;
+}
+
+.news-item {
+    background: #F9F7F7;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+
+}
+
+.news-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    margin: 15px;
+    color: #353A3D;
+}
+
+.news-item-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0 14px;
+
+    color: #5B6469;
+}
+
+.news-item-lg {
+    width: 856px;
+}
+
+.news-item-lg .news-item-img {
+    float: left;
+    height: 100%;
+}
+
+.news-item-sm .news-item-img,
+.news-item-normal .news-item-img {
+    width: 100%;
+}
+
+.news-item-lg .news-item-title {
+    margin: 41px 24px 15px;
+
+}
+
+.news-item-lg .news-item-description {
+    margin: 0 24px 41px;
+}
+
+.news-item-sm {
+    width: 277px
+}
+
+.news-item-sm .news-item-title {
+    text-align: center;
+}
+
+.news-item-normal {
+    width: 556px;
+
+}
+
+.news-list > div:nth-of-type(1) {
+    grid-column: 1 / 4;
+}
+
+.news-list > div:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+
+.news-list > div:nth-of-type(4) {
+    grid-column: 3 / 5;
+}
+
+.news-list > div:nth-of-type(5) {
+    grid-column: 1 / 3;
+
+}
+
+.news-list > div:nth-of-type(6) {
+    grid-column: 3 / 5;
+}
+
+.news-list > div:nth-of-type(7) {
+    grid-column: 1 / 2;
+}
+
+.news-list > div:nth-of-type(8) {
+    grid-column: 2 / 5;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+
+.copyright {
+    font-size: 13px;
+    line-height: 13px;
+
+    color: #FFFFFF;
+}
+
+.copyright,
+.footer-logo {
+    padding: 29px;
+}
+
+.hide-block {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

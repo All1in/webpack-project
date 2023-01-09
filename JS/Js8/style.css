@@ -1,0 +1,26 @@
+.root {
+    display: inline-block;
+}
+
+.price:hover {
+    border: 2px solid green;
+}
+
+span {
+    display: block;
+}
+
+.color-green {
+    color: green;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.btn {
+    background: none;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 2px;
+}
