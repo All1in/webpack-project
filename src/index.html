@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Step Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    
+    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="#">
+        <img class="logo__img" src="https://img.icons8.com/external-linector-fill-linector/344/4a90e2/external-clinic-self-protection-linector-fill-linector.png" alt="logo ico">
+        Clinic
+      </a>
+      <button type="button" class="btn btn-primary login-btn" >
+        Log in
+      </button>
+      <button type="button" class="btn btn-primary visit-btn hide" >
+        Create new visit
+      </button>
+    </div>
+
+  </header>
+  <section class="filter">
+    <div class="container filter-container">
+      <form class="row">
+        <div class="col-md-12">
+          <label for="inputSearch" class="form-label">Пошук по заголовку/опису візиту</label>
+          <input type="text" class="form-control" id="inputSearch" placeholder="Введіть пошуковий запит тут..">
+        </div>
+        <div class="col-md-6">
+            <label for="inputStatus" class="form-label">Пошук по статусу</label>
+            <select id="inputStatus" class="form-select">
+              <option selected>Триває</option>
+              <option>Завершено</option>
+            </select>
+          </div>
+        <div class="col-md-6">
+          <label for="inputUrgency" class="form-label">Терміновість візиту</label>
+          <select id="inputUrgency" class="form-select">
+            <option>Висока</option>
+            <option selected>Звичайна</option>
+            <option>Планова</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="card__root">
+    <div class="container">
+      <h2 class="card-title">No items have been added</h2>
+      
+    </div>
+  </section>
+
+    
+  
+    
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
