@@ -1,3 +1,2 @@
-# step_projects
-
+# WEBPACK
 Project with Webpack configuration!
