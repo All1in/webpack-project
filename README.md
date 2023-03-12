@@ -8,15 +8,13 @@
 
 # About
 
-This project made with WEBPACK.<br/>You may look for a webpack-config.js file in the root directory!<br/> At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph from one or more entry points and then combines every module your project needs into one or more bundles, which are static assets to serve your content from.
+This project made with WEBPACK.<br/>You may look for a webpack-config.js file in the root directory!<br/> At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph from one or more entry points and then combines every module your project needs into one or more bundles, which are static assets to serve your content from.<br/>
+Also this repository contains a few tasks from JavaScript!
 
 ## Stack
 
-1. HTML
-2. CSS
-3. JS
-4. GULP
-5. NodeJS
+1. JS
+2. WEBPACK
 
 ## Contributors
 
